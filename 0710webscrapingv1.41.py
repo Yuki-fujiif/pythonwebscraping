@@ -17,7 +17,7 @@ scopes = [
 #認証キーのファイルパスを入力
 
 credentials = Credentials.from_service_account_file(
-    "/Users/yukimac/Desktop/My apps/python/20230617ITwork/webscraping202306-85213-10cc2c8bd6c7.json",
+    "",
     scopes=scopes
 )
 
@@ -25,7 +25,7 @@ gc = gspread.authorize(credentials)
 
 # スプレッドシートURLを入力。
 
-spreadsheet_url = "https://docs.google.com/spreadsheets/d/1PCc-bUZsnkKZ2xLw_MMYl8DqiwRxQAeAHQp1YL6FIfM/edit#gid=0"
+spreadsheet_url = ""
 
 spreadsheet = gc.open_by_url(spreadsheet_url)
 worksheet1 = spreadsheet.get_worksheet(0)  # Sheet1
