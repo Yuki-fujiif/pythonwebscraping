@@ -14,7 +14,7 @@ scopes = [
     'https://www.googleapis.com/auth/drive'
 ]
 
-#認証キーのファイルパスを入力
+#認証キーのファイルパスを""に入力
 
 credentials = Credentials.from_service_account_file(
     "",
@@ -23,9 +23,9 @@ credentials = Credentials.from_service_account_file(
 
 gc = gspread.authorize(credentials)
 
-# スプレッドシートURLを入力。
+# スプレッドシートURLを""に入力。
 
-spreadsheet_url = ""
+spreadsheet_url = "" 
 
 spreadsheet = gc.open_by_url(spreadsheet_url)
 worksheet1 = spreadsheet.get_worksheet(0)  # Sheet1
